@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<HTML lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>●●Flower Studio</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="icon" href=“＃”>
+    <meta name="descriptioin" consent=“●●”>
+    <!-- bxslider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+    <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+    // カスタマイズオプション
+    $(document).ready(function(){
+    $('.bxslider').bxSlider({
+    auto: true,speed: 2000
+    ,mode: 'fade',pause: 4500
+    });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>●●Flower Studio</h1>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input">
+          <!-- <a class="nav-button" href="#"> -->
+            <span></span>
+            <!-- </a> -->
+          </label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul>
+              <li><a href="#topicsid">Topics</a></li>
+              <li><a href="#wsid">Workshop</a></li>
+              <li><a href="#orderid">Order</a></li>
+              <li><a href="#contactid">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      <!-- <section class="hamburger">
+        <a class="nav-button" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </section> -->
+      <nav>
+        <ul>
+          <li><a href="#topicsid">Topics</a></li>
+          <li><a href="#wsid">Workshop</a></li>
+          <li><a href="#orderid">Order</a></li>
+          <li><a href="#contactid">Contact</a></li>
+          <li><a  class="phone" href="#"><span class="fa fa-phone" aria-hidden="true"></span>03-1234−5678</a></li>
+        </ul>
+      </nav>
+      <div id="page_top"><a href="#"></a></div>
+    </header>
+
+    <main>
+      <article class="mainvisual">
+        <ul class="bxslider">
+          <li><img class="image1" src="images/IMG_1829.JPG" alt="メインビジュアルの写真"></li>
+          <li><img class="image2" src="images/dyah-arum-XwLTGrtuMX0-unsplash.jpeg"></li>
+          <li><img class="image3" src="images/daniil-silantev-eaBA4z9RYfw-unsplash.jpeg"></li>
+          </ul>
+        <!-- <img src="images/IMG_1829.JPG" alt="メインビジュアルの写真"> -->
+        <h2>Healed with flowers and greens.</h2>
+      </article>
+      
+      <article class="topics" id="topicsid">
+        <section class="content-wrapper">
+          <div class="heading">
+            <h2>Topics</h2>
+          </div>
+          <div class="content">
+            <table>
+              <tbody>
+                <tr>
+                  <th>2020.00.00</th>
+                  <td>タイトルが入ります。タイトルが入ります。</td>
+                </tr>
+                <tr>
+                  <th>2020.00.00</th>
+                  <td>タイトルが入ります。タイトルが入ります。</td>
+                </tr>
+                <tr>
+                  <th>2020.00.00</th>
+                  <td>タイトルが入ります。</td>
+                </tr>
+                <tr>
+                  <th>2020.00.00</th>
+                  <td>タイトルが入ります。タイトルが入ります。</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="btn"><a href="secondpage/topics.html">more</a></p>
+          </div>
+        </section>
+      </article>
+      
+
+      <article class="workshop" id="wsid">
+        <div class="content-wrapper">
+          <!-- <img src="#" alt="Workshopの写真です"> -->
+          <div class="content">
+            <h2>Workshop</h2>
+            <p>初心者の方でも楽しく学べます。</p>
+            <p class="btn2"><a href="secondpage/ws.html">more</a></p>
+          </div>
+        </div>
+      </article>
+      
+      <article class="others" id="orderid">
+        <section class="content-wrapper">
+          <div class="topic">
+            <h2>Order</h2>
+            <p>ご要望に沿ってお作りします。</p>
+          </div>
+          <ul>
+            <li><a href="secondpage/gift.html"><figure><img src="images/lizzie-BqYoSL76lGo-unsplash.jpeg" alt="ギフトのページへ"></figure><span>Gift</span></a></li>
+            <li><a href="secondpage/wedding.html"><figure><img src="images/adrianna-van-groningen-TGk5gZUICFM-unsplash.jpeg" alt="ウェディングのページへ"></figure><span>Wedding</span></a></li>
+          </ul>
+        </section>  
+      </article>
+
+      <article class="contact" id="contactid">
+        <p><a href="secondpage/contact.html">Contact</a></p>
+      </article>
+    </main>
+
+
+    <footer>
+      <section class="content-wrapper">
+        <div class="footer-logonav">
+          <h2>●●Flower Studio</h2>
+          <nav>
+            <ul>
+              <li><a href="#wsid">Workshop</a></li>
+              <li><a href="#orderid">Order</a></li>
+              <li><a href="#contactid">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="adress">
+          〒000−0000<br>東京都渋谷区●●0−0−0<br>
+          <!-- <span class="fa fa-phone" aria-hidden="true"> -->
+          </span>TEL 03-1234−5678
+        </div>
+        <p class="copy">&copy;●●Flower Studio Co.,Ltd</p>
+      </section>
+    </footer>
+  </body>
+</HTML>

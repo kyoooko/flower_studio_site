@@ -1,0 +1,264 @@
+/* ***********************PCサイズ**************************** */
+@media screen and (max-width:1199px){
+
+/* ヘッダー */
+ .hamburger {
+  /* display: block; */
+  position:absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  /* background-color: palevioletred; */
+  }
+header nav {
+    display: none;
+}
+.nav-button,
+.nav-button span {
+display: inline-block;
+}
+.nav-button {
+position: relative;
+width: 30px;
+height: 26px;
+/* background-color:purple; */
+}
+.nav-button span {
+position: absolute;
+left: 0;
+width: 100%;
+height: 4px;
+background-color:#fff;
+}
+.nav-button span:nth-of-type(1) {
+top:0;
+}
+
+.nav-button span:nth-of-type(2) {
+top: 11px;
+}
+
+.nav-button span:nth-of-type(3) {
+bottom: 0px;
+}
+
+/* ヘッダー （ハンバーガーメニュー）*/
+#nav-open {
+  display:block;
+}
+header nav{
+ display: none;
+}
+
+/* メインビジュアル */
+/* .mainvisual img {
+  height: auto;
+  } */
+/* トピック */
+.topics {
+  padding: 50px 5vw;
+  }
+.topics .content-wrapper{
+  display: block;
+}
+.topics .heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+.topics .content{
+  width:100%;
+}
+/* フッター */
+.footer-logonav{
+  display: block;
+}
+
+}
+
+/* ***************************ipadサイズ******************************* */
+
+@media screen and (max-width:768px){
+  /* ヘッダー */
+header{
+  height: 60px;
+}
+header h1{
+  font-size: 1.2rem;
+  margin: 0 0 0 5px;	
+}
+.hamburger {
+  /* display: block; */
+  position:absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  /* background-color: palevioletred; */
+  }
+.nav-button {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  /* background-color:purple; */
+  }
+  .nav-button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color:#fff;
+  }
+  .nav-button span:nth-of-type(1) {
+  top:0;
+  }
+  .nav-button span:nth-of-type(2) {
+  top: 7px;
+  }
+  .nav-button span:nth-of-type(3) {
+  bottom: 0px;
+  }
+
+/* メインビジュアル */
+.mainvisual{
+  padding-top: 60px;
+}
+.mainvisual .image3 {
+  object-position: 40% 50%;
+  } 
+ /* トピックス    */
+ .topics{
+   padding:50px 0;
+   width: 90%;
+   margin: 0 auto;
+ }
+ 
+.topics a{
+  width: 35%;
+  min-width: 200px;
+  margin: 0 auto;
+}
+.topics .content th,td{
+  font-size: 0.8rem;
+}
+
+/* others */
+/* .others ul{
+  transform: none;
+} */
+.others li span {
+  transform: translate(-50%,-50%);
+  font-size: 1.75rem;
+}
+
+/* フッター */
+.footer-logonav li{
+  /* background-color: crimson; */
+  width: calc(100%/3);
+  /* margin: 0 0 10px; */
+}
+.footer-logonav li a{
+  text-align: center;
+  display: block;
+  /* background-color: cadetblue; */
+}
+footer h2{
+  font-size:1.5rem ;
+}
+.adress{
+  padding: 25px 0 40px 0;
+  font-size: 0.8rem;
+}
+
+}
+
+/* **************************スマホサイズ*****************************: */
+@media screen and (max-width: 479px) {
+  /* トピックス */
+  .topics .content th {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1.25rem 0 0 0;
+  /* border-bottom: 0; */
+  font-size: 0.9rem;
+  }
+
+  .topics .content td {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  }
+  /* ↓これではない。trではなくtdとthにdisplay:block;指定する。
+  .topics .content tr{
+    display: block;
+  } */
+
+  /* mainvisual */
+/* ↓これめちゃめちゃ難しかった */
+.mainvisual .bx-wrapper{
+  height: 350px;
+}
+.mainvisual img {
+  height: 350px;
+}
+.mainvisual .image2{
+  height: 350px;
+}
+/* workshop */
+
+  .workshop .content{
+     position: absolute;
+     left:50%;
+     transform: translateX(-50%);
+     top:30%;
+   } 
+
+  .workshop h2,p {
+    /* background-color: rosybrown; */
+    text-align: center;
+  }
+
+  .workshop p.btn a {
+    /* width: 30%; */
+    min-width: 200px;
+    margin: 0 auto;
+  }
+
+
+
+  /* others */
+  .others ul{
+    transform: none;
+  }
+  .others .topic{
+    text-align: center;
+    width: 100%;
+    padding: 5% 0;
+  }
+.others li{
+  width: 90%;
+  margin:0 auto 30px auto;
+}
+
+/* contact */
+.contact p a{
+  font-size: 0.875rem;
+  /* padding: 1rem 0; */
+  min-width: 200px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+}
+footer ul{
+  font-size: 0.75rem;
+}
+
+}
